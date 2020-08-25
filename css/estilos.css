@@ -3,6 +3,48 @@
     padding: 0;
 }
 body{
-    background: blueviolet;
+    background: url(../img/pexels-aleksandar-pasaric-1694000.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
 }
-
+#menu img{
+    width: 11%;
+    display: block;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+#logotipo img{
+    width: 42%;
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+}
+#buscador svg{
+    display: block;
+    margin-left: 70%;
+    margin-top: 9%;
+}
+.cartoon img{
+    width: 51%;
+    display: block;
+    margin-left: 46%;
+}
+.cartoon h1{
+    color: white;
+    font-size: 65px;
+    text-align: center;
+    margin-top: 15%;
+    margin-left: -50%;
+}
+.cartoon h1 span{
+    color: rgb(199, 1, 255);
+}
+.redes{ 
+    display: grid;
+    grid-template-columns: 10% 10% 10% ;
+    margin-top: 5%;
+    margin-left: 10%;
+}
