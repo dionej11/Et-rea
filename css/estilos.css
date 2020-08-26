@@ -24,14 +24,17 @@ header nav{
     border-radius: 50px;
     padding-left: 4%;
     font-size: 16px;
-    margin-top: -8%;
+    margin-top: 9%;
     margin-left: 3%;
 }
 header nav a{
     color: white;
     padding: 2.5px;
-    text-align: center;
-    
+    text-align: center;    
+}
+header nav a:hover{
+    text-decoration: none;
+    color: rgb(211, 168, 231); 
 }
 .hide{
     display: none;
@@ -39,6 +42,7 @@ header nav a{
 .back{
     margin-left: 3%;
     margin-top: 3%;
+    cursor: pointer;
 }
 #logotipo img{
     width: 42%;
@@ -83,4 +87,27 @@ header nav a{
     margin: auto;
     margin-top: -1%;
     cursor: pointer;
+}
+/************************************************************SOBRE MI****************************************************/
+#foto{
+    margin: auto;
+    width: 75%;
+    border-radius: 60%;
+}
+#foto img{
+    width: 100%;
+    border-radius: 60%;
+}
+.bienvenida{    
+    margin-top: 3%;
+}
+.bienvenida h1, h3{
+    text-align: center;
+    margin-left: -15%;
+}
+.bienvenida h1{
+    color: #B68960;
+}
+.bienvenida h3{
+    color: #482716;
 }
