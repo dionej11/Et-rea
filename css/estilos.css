@@ -2,8 +2,7 @@
     margin:0;
     padding: 0;
 }
-body{
-    
+body{    
     overflow-x: hidden;
 }
 video{
@@ -17,17 +16,42 @@ video{
     display: block;
     margin-left: 20%;
     margin-top: 5%;
+    cursor: pointer;
+}
+header nav{
+    background: rgb(199, 1, 255);
+    text-decoration: none;
+    border-radius: 50px;
+    padding-left: 4%;
+    font-size: 16px;
+    margin-top: -8%;
+    margin-left: 3%;
+}
+header nav a{
+    color: white;
+    padding: 2.5px;
+    text-align: center;
+    
+}
+.hide{
+    display: none;
+}
+.back{
+    margin-left: 3%;
+    margin-top: 3%;
 }
 #logotipo img{
     width: 42%;
     display: block;
     margin: auto;
     margin-top: 2%;
+    cursor: pointer;
 }
 #buscador svg{
     display: block;
     margin-left: 70%;
     margin-top: 9%;
+    cursor: pointer;
 }
 .cartoon img{
     width: 50%;
@@ -49,6 +73,7 @@ video{
     grid-template-columns: 10% 10% 10% ;
     margin-top: 5%;
     margin-left: 10%;
+    cursor: pointer;
 }
 #estado{
     width: 100%;
@@ -57,4 +82,5 @@ video{
     display: block;
     margin: auto;
     margin-top: -1%;
+    cursor: pointer;
 }
