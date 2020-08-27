@@ -92,22 +92,81 @@ header nav a:hover{
 #foto{
     margin: auto;
     width: 75%;
-    border-radius: 60%;
+    border-radius: 70%;
 }
 #foto img{
     width: 100%;
-    border-radius: 60%;
+    border-radius: 70%;
 }
 .bienvenida{    
     margin-top: 3%;
 }
 .bienvenida h1, h3{
     text-align: center;
-    margin-left: -15%;
+    margin-left: -40%;
 }
 .bienvenida h1{
     color: #B68960;
 }
 .bienvenida h3{
     color: #482716;
+}
+.bienvenida img{
+    margin-left: -29%;
+}
+.yo{
+    font-size: 20px;
+    color: #482716;
+}
+.yoInicio{    
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: 12% 88%;
+    grid-template-rows: 66%;
+}
+.M p{
+    font-size: 150px;
+    margin-top: -45%;
+}
+.yoFinal p{
+    margin-top: -5%;
+}
+.dionejIntro{
+    margin-top: 6%;
+}
+.cartoon img{
+    width: 65%;
+}
+.dionejIntro p{
+    text-align: center;
+    margin-top: 30%;
+}
+.tiquete{
+    margin-top: 10%;
+    color: rgb(95, 217, 226);
+    text-align: center;
+    text-decoration-line: underline;
+}
+.tiquete p{
+    cursor: pointer;
+}
+.tiquete p:hover{
+    color: rgb(75, 177, 224);
+    text-decoration: rgb(75, 177, 224);
+}
+.parchate p{
+    margin-top: 10%;
+    font-size: 15px;
+    color: #B68960;
+}
+footer{
+    width: 100%;
+    background:  #c29b77;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 2%;
+}
+.top p{
+    cursor: pointer;
 }
