@@ -2,14 +2,30 @@
     margin:0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{    
     overflow-x: hidden;
+    font-family: 'cairo';
 }
 video{
     position: fixed;
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
+}
+@font-face{
+    font-family: 'cairo';
+    src: url(../fuentes/Cairo-Regular.ttf);
+}
+@font-face{
+    font-family: 'bentham';
+    src: url(../fuentes/Bentham-Regular.ttf);
+}
+@font-face{
+    font-family: 'dancing_script';
+    src: url(../fuentes/DancingScript-VariableFont_wght.ttf);
 }
 #menu img{
     width: 11%;
@@ -18,8 +34,7 @@ video{
     margin-top: 5%;
     cursor: pointer;
 }
-header nav{
-    background: rgb(199, 1, 255);
+header nav{   
     text-decoration: none;
     border-radius: 50px;
     padding-left: 4%;
@@ -32,9 +47,19 @@ header nav a{
     padding: 2.5px;
     text-align: center;    
 }
-header nav a:hover{
+.nav1 nav a:hover{
     text-decoration: none;
-    color: rgb(211, 168, 231); 
+    color: rgb(231, 197, 247); 
+}
+.nav2 nav a:hover{
+    text-decoration: none;
+    color: rgb(247, 216, 170); 
+}
+.nav1 nav{
+    background: rgb(199, 1, 255);
+}
+.nav2 nav{
+    background: #D6A662;
 }
 .hide{
     display: none;
@@ -91,12 +116,20 @@ header nav a:hover{
 /************************************************************SOBRE MI****************************************************/
 #foto{
     margin: auto;
-    width: 75%;
-    border-radius: 70%;
+    width: 55%;
+    border-radius: 40%;
 }
 #foto img{
+    margin-top: 15%;
+    margin-left: 10%;
     width: 100%;
-    border-radius: 70%;
+    border-radius: 50%;
+}
+.grow:hover
+{
+-webkit-transform: scale(1.02);
+-ms-transform: scale(1.02);
+transform: scale(1.02);
 }
 .bienvenida{    
     margin-top: 3%;
@@ -109,46 +142,69 @@ header nav a:hover{
     color: #B68960;
 }
 .bienvenida h3{
+    font-size: 20px;
     color: #482716;
 }
 .bienvenida img{
     margin-left: -29%;
 }
 .yo{
-    font-size: 20px;
+    font-size: 22px;
+    font-family: 'bentham';
     color: #482716;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .yoInicio{    
     padding-top: 5%;
     display: grid;
-    grid-template-columns: 12% 88%;
+    grid-template-columns: 16% 85%;
     grid-template-rows: 66%;
 }
 .M p{
-    font-size: 150px;
+    font-size: 180px;
     margin-top: -45%;
 }
 .yoFinal p{
-    margin-top: -5%;
+    margin-top: -8%;
+}
+#circulo{
+    width: 40%;
+    height: 500px;
+    border: 2px solid #B68960;
+    border-radius: 90%;
+    font-size: 22px;
+    font-family: 'bentham';
+    color: #482716;
+    margin: auto;
 }
 .dionejIntro{
     margin-top: 6%;
 }
-.cartoon img{
-    width: 65%;
+.cartoon2 img{
+    width: 140%;    
+    margin-top: 5%;
+    margin-left: -15%;
 }
 .dionejIntro p{
     text-align: center;
-    margin-top: 30%;
+    margin-top: 45%;
+}
+.dionejIntro p span{
+    color: rgb(172, 20, 172);
+    font-size: 22px;
 }
 .tiquete{
     margin-top: 10%;
     color: rgb(95, 217, 226);
     text-align: center;
-    text-decoration-line: underline;
+    text-decoration-line: underline; 
 }
 .tiquete p{
     cursor: pointer;
+    width: 15%;
+    display: block;
+    margin: auto;
 }
 .tiquete p:hover{
     color: rgb(75, 177, 224);
@@ -156,17 +212,29 @@ header nav a:hover{
 }
 .parchate p{
     margin-top: 10%;
-    font-size: 15px;
+    font-family: 'dancing_script';
+    font-size: 20px;
     color: #B68960;
 }
 footer{
     width: 100%;
-    background:  #c29b77;
+    background:  #DFCEB7;
     color: white;
-    font-size: 18px;
+    font-size: 1em;
     text-align: center;
+    text-shadow: rgb(65, 64, 64) 0.1em 0.1em 0.3em;
     padding: 2%;
+    padding-bottom: 0.5%;
 }
-.top p{
+.top a{
     cursor: pointer;
+    width: 5%;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    color: white;
+}
+.top a:hover{
+    text-decoration: none;
+    color: rgb(245, 230, 204);
 }
