@@ -217,14 +217,19 @@ transform: scale(1.02);
     color: #B68960;
 }
 footer{
-    width: 100%;
-    background:  #DFCEB7;
+    width: 100%;    
     color: white;
     font-size: 1em;
     text-align: center;
     text-shadow: rgb(65, 64, 64) 0.1em 0.1em 0.3em;
     padding: 2%;
     padding-bottom: 0.5%;
+}
+.foot1{
+    background:  #DFCEB7;
+}
+.foot2{
+    background: #C701FF;
 }
 .top a{
     cursor: pointer;
@@ -237,4 +242,49 @@ footer{
 .top a:hover{
     text-decoration: none;
     color: rgb(245, 230, 204);
+}
+/************************************************************tiquete****************************************************/
+#formulario{
+    background: #DDF9FF;
+    width: 95%;
+    height: 25em;
+    margin: auto;
+    border-radius: 3%;
+}
+#formulario input{
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    padding: 1.5%;
+    margin-top: 5%;
+    border: none;
+    background: #C7F4DE;
+    box-shadow: 4px 3px 10px 2px rgb(184, 183, 183);
+}
+#formulario button{
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: #FED701;
+    color: #ffffff;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 10px;
+}
+#header_form{
+    background: #FED701;
+    color: #ffffff;
+    height: 18%;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    padding: 2%;
+    text-align: center;
+}
+.cohete img{
+    width: 100%;
 }
