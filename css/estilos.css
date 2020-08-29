@@ -331,3 +331,16 @@ footer{
 .cohete img{
     width: 100%;
 }
+/************************************************************contacteme***********************************************/
+.contacto{
+    margin-top: 5%;        
+}
+.contacto a:hover{
+    text-decoration: none;
+}
+.contacto h5{
+    text-align: center;
+}
+.contacto h5{
+    margin-top: 2%;
+}
