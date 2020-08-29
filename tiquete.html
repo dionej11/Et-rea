@@ -57,24 +57,58 @@
     <div class="container">
         <div class="row">
             <div class="col-md-7">
-                <form action="">
+                <form id="contform" action="">
                     <div id="formulario">
                         <div id="header_form">
                             <h1>Realiza tu check in</h1>
                         </div>
                         <div class="boxes">
-                            <input type="text" placeholder="Nombre">
-                            <input type="text" placeholder="¿Desde donde quieres despegar? ej. mi lapto">
-                            <input type="email" placeholder="Correo">
-                            <button>Despegar</button>
+                            <input id="nombre" type="text"  placeholder="Nombre">
+                            <input id="desde" type="text"  placeholder="¿Desde donde quieres despegar? ej. mi lapto">
+                            <input id="correo" type="email"  placeholder="Correo">
+                            <button id="despegar">Despegar</button>
                         </div>
                     </div>
                 </form>
+                <div id="verif" class="hide">
+                    <div id="latersend">
+                        <div id="amarillo">
+                        </div>
+                        <div id="info">
+                            <h5>A tu correo llegará el tiquete con
+                                destino a <span>Etérea</span>. <br>
+                                Esperamos que disfrutes el viaje y
+                                recuerda abrocharte el cinturon.
+                                </h4>
+                                <a href="tiquete.html">
+                                    <button>
+                                    <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-x" fill="white"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </button>
+                                </a>
+                                
+                                <a href="inicio.html"><button>
+                                        <svg width="1.5em" height="1.5em" viewBox="0 0 16 16"
+                                            class="bi bi-house-door-fill" fill="white"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z" />
+                                            <path fill-rule="evenodd"
+                                                d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                        </svg>
+                                    </button></a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="col-md-5">
                 <div class="cohete">
                     <img src="img/cohetePNG.png" alt="cohete">
-                </div>                
+                </div>
             </div>
         </div>
     </div>

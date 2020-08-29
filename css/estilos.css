@@ -247,7 +247,7 @@ footer{
 #formulario{
     background: #DDF9FF;
     width: 95%;
-    height: 25em;
+    height: 28em;
     margin: auto;
     border-radius: 3%;
 }
@@ -257,10 +257,11 @@ footer{
     width: 80%;
     height: 100%;
     padding: 1.5%;
-    margin-top: 5%;
+    margin-top: 6%;
     border: none;
     background: #C7F4DE;
     box-shadow: 4px 3px 10px 2px rgb(184, 183, 183);
+    outline: none;
 }
 #formulario button{
     display: block;
@@ -275,6 +276,12 @@ footer{
     font-size: 1.3em;
     border: none;
     border-radius: 10px;
+    outline: none;
+}
+#formulario button:hover{
+    box-shadow: 0 4px 16px rgba(49, 172, 172,1);
+    transition: all 0.2s ease;
+
 }
 #header_form{
     background: #FED701;
@@ -284,6 +291,42 @@ footer{
     border-top-left-radius: 6px;
     padding: 2%;
     text-align: center;
+}
+#latersend{
+    width: 100%;
+    height: 17em;
+    border-radius: 3%;
+    background: #DDF9FF;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 18%;
+}
+#info{
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: content-box;
+}
+#info h5 span{
+    color: #C701FF;    
+}
+#info button{
+    margin: 5%;
+    border: none;
+    padding: 3%;
+    background: #FED701;
+    border-radius: 50%;
+    color: #ffffff;
+    outline: none;
+}
+
+#amarillo{
+    height: 100%;
+    background: #FED701;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 .cohete img{
     width: 100%;
