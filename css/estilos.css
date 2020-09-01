@@ -344,3 +344,9 @@ footer{
 .contacto h5{
     margin-top: 2%;
 }
+.contacto img{
+    width: 55%;     
+    border-radius: 50%;
+    border: #C701FF 2px dotted;
+    padding: .5%;   
+}
