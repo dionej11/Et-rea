@@ -333,20 +333,8 @@ footer{
 }
 /************************************************************contacteme***********************************************/
 .contacto{
-    margin-top: 5%;        
+    margin: 5%;        
 }
-.contacto a:hover{
-    text-decoration: none;
-}
-.contacto h5{
-    text-align: center;
-}
-.contacto h5{
-    margin-top: 2%;
-}
-.contacto img{
-    width: 55%;     
-    border-radius: 50%;
-    border: #C701FF 2px dotted;
-    padding: .5%;   
+.redesC{
+    display: grid;
 }
