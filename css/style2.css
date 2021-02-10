@@ -272,9 +272,10 @@ main section h2 span{
     top: 0;
     left: 0;
 
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
+    z-index: 4;
 }
 .modal__img{
     width: 40%;
