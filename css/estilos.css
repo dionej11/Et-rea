@@ -34,7 +34,7 @@ video{
     margin-top: 5%;
     cursor: pointer;
 }
-header nav{   
+nav{   
     text-decoration: none;
     border-radius: 50px;
     padding-left: 4%;
@@ -42,25 +42,7 @@ header nav{
     margin-top: 9%;
     margin-left: 3%;
 }
-header nav a{
-    color: white;
-    padding: 2.5px;
-    text-align: center;    
-}
-.nav1 nav a:hover{
-    text-decoration: none;
-    color: rgb(231, 197, 247); 
-}
-.nav2 nav a:hover{
-    text-decoration: none;
-    color: rgb(247, 216, 170); 
-}
-.nav1 nav{
-    background: rgb(199, 1, 255);
-}
-.nav2 nav{
-    background: #D6A662;
-}
+
 .hide{
     display: none;
 }

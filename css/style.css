@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+@font-face{
+    font-family: 'roboto-bold';
+    src: url(../fuentes/Roboto-Regular.ttf);
+}
 .particles-js {
     position: absolute;
     top: 0;
@@ -11,22 +15,41 @@
 }
 .logo{
     position: absolute;
-    top: 20px;
+    top: 15px;
     /* bottom: 0; */
     /* right: 0; */
-    left: 10%;
+    left: 8%;
 }
 .logo img{
     width: 200px;
 }
+nav{
+    position: absolute;
+    top: 40px;
+    right: 15%;
+    background: #C701FF;
+    font-family: 'roboto-bold';
+    font-size: 15px;
+    padding: 1%;
+    width: 28%;
+    border-radius: 30px;
+}
+nav a{
+    margin: 10px;
+    color: white;
+}
+nav a:hover{
+    color: rgb(241, 202, 241);
+}
+.hide{
+    display: none;
+}
 #hamburger{
     position: absolute;
-    top: 30px;
+    top: 40px;
     /* bottom: 0; */
-    right: 10%;
+    right: 7%;
     /* left: 1200px; */
-    width: 59px;
-    height: 59px;
     background: #C701FF;
     border-radius: 50px;
 }
@@ -35,15 +58,16 @@
     border: 0;
     cursor: pointer;
     padding: 0;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     z-index: 3;
+    outline: none;
 }
 #hamburger button span{
     border-radius: 5px;
     background: #FFFFFF;
     display: block;
-    width: 58%;
+    width: 50%;
     margin: 5px auto;
     height: 2px;
 
@@ -122,4 +146,134 @@
         margin: 5px auto;
         transform: translateY(0px) rotate(0deg);
     }
+}
+#foto{
+    width: 20%;
+    border-radius: 60%;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+h1{
+    font-family: 'roboto-bold';
+    font-size: 45px;
+    position: absolute;
+    top: 40%;
+    right: 30%;
+}
+h1 span{
+    color:  #C701FF;
+}
+.redes{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 33%;
+    width: 200px;
+}
+.redes img{
+    width: 40%;
+}
+.git img{
+    width: 103%;
+}
+/****contactame******/
+#cuadrado{
+    width: 700px;
+    height: 420px;
+    background: #c801ff8e;
+    position: absolute;
+    left: 50%;
+    margin-left: -350px;
+    top: 23%;
+    border-radius: 10px;
+}
+.cont-msj{
+    margin: 8% 12%;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: 'roboto-bold';
+    font-weight: lighter;
+}
+.cont-msj form{
+    margin-top: 4%;
+}
+.cont-msj form input{
+    width: 230px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    outline: none;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+.cont-msj form input::placeholder{
+    color: rgb(114, 114, 116);
+    font-family: 'roboto-bold';
+    font-size: 15px;
+}
+.cont-msj form input:nth-child(1){
+    margin-right: 20px;
+}
+.cont-msj form textarea{
+    width: 514px;
+    height: 180px;
+    border-radius: 5px;
+    outline: none;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 15px;
+    resize: none;
+}
+.cont-msj form textarea::placeholder{
+    color: rgb(114, 114, 116);
+    font-family: 'roboto-bold';
+    font-size: 15px;
+}
+#circulo_1{
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(0, #C701FF, white);
+    box-shadow: 3px 3px 6px rgb(131, 129, 129);
+    position: absolute;
+    left: 20%;
+    top: 48%;
+    border-radius: 50%;
+}
+#circulo_1 img{
+    width: 75%;
+    margin-top: 24%;
+    margin-left: 12%;
+    filter: drop-shadow(-2px 2px 1px #f59ef5);
+}
+#circulo_2{
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(0, #C701FF, white);
+    box-shadow: -3px 3px 6px rgb(131, 129, 129);
+    position: absolute;
+    right: 20%;
+    top: 48%;
+    border-radius: 50%;
+    text-align: center;
+}
+#circulo_2 button{
+    margin-top: 35%;
+    font-family: 'roboto-bold';
+    font-size: 25px;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+#correo_box{
+    width: 70px;
+    height: 55px;
+    background: transparent;
+    border-radius: 8%;
+    border: 2px solid white;
+    margin: auto;
+    margin-top: 24%;
 }

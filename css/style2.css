@@ -1,0 +1,468 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: 'roboto-bold';
+    src: url(../fuentes/Roboto-Regular.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    background: url(../img/header.PNG);    
+}
+header img{
+    width: 200px;
+    height: 100px;  
+    margin-top: 1.2%; 
+    margin-left: 8%; 
+}
+nav{
+    position: fixed;
+    top: 40px;
+    right: 15%;
+    z-index: 3;
+    background: #C701FF;
+    font-family: 'roboto-bold';
+    font-size: 15px;
+    padding: 1%;
+    width: 29%;
+    border-radius: 30px;
+}
+nav a{
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    color: rgb(241, 202, 241);
+}
+.hide{
+    display: none;
+}
+#hamburger{
+    position: fixed;
+    top: 40px;
+    /* bottom: 0; */
+    right: 7%;
+    /* left: 1200px; */
+    background: #C701FF;
+    border-radius: 50px;
+    z-index: 3;
+}
+#hamburger button{
+    background: none;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    z-index: 3;
+    outline: none;
+}
+#hamburger button span{
+    border-radius: 5px;
+    background: #FFFFFF;
+    display: block;
+    width: 50%;
+    margin: 5px auto;
+    height: 2px;
+
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#hamburger button.open .top-line{
+    animation-name: top-line-animation;
+}
+#hamburger button.open .middle-line{
+    animation-name: middle-line-animation;
+}
+#hamburger button.open .botton-line{
+    animation-name: botton-line-animation;
+}
+
+#hamburger button .top-line{
+    animation-name: top-line-animation-close;
+}
+#hamburger button .middle-line{
+    animation-name: middle-line-animation-close;
+}
+#hamburger button .botton-line{
+    animation-name: botton-line-animation-close;
+}
+
+@keyframes top-line-animation{
+    50%,100%{
+        margin: 0 auto;
+        transform: translateY(2px) rotate(-45deg);
+    }
+}
+@keyframes botton-line-animation{
+    50%,100%{
+        margin: 0 auto;
+        transform: translateY(-2px) rotate(45deg);
+    }
+}
+@keyframes middle-line-animation{
+    20%,100%{
+        margin: 0 auto;
+        width: 0;
+        opacity: 0;
+    }
+}
+
+
+@keyframes top-line-animation-close{
+    0%{
+        margin: 0 auto;
+        transform: translateY(2px) rotate(-45deg);
+    }
+    50%,100%{
+        margin: 5px auto;
+        transform: translateY(0px) rotate(0deg);  
+    }
+}
+@keyframes middle-line-animation-close{
+    0%{
+        margin: 0 auto;
+        width: 0;
+        opacity: 0;
+    }
+    20%,100%{
+        margin: 0 auto;
+        width: 60%;
+        opacity: 1;
+    }
+}
+@keyframes botton-line-animation-close{
+    0%{
+        margin: 0 auto;
+        transform: translateY(-2px) rotate(45deg);
+    }
+    50%,100%{
+        margin: 5px auto;
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background: url(../img/header.PNG);
+    text-align: center;
+    font-family: 'roboto-bold';
+}
+.foot{
+    display: flex;
+    width: 200px;
+    margin: auto;
+}
+.foot img{
+    width: 40%;
+}
+.git img{
+    width: 103%;
+}
+/*****************************************************portafolio******************************************************/
+.portafolio{
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-family: 'roboto-bold';
+}
+main section h2 span{
+    color: #C701FF;
+}
+.cont-img{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cont-img .imagen{
+    width: 32%;
+    position: relative;
+    height: 200px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px #c801ffab;
+    border-radius: 10px;
+}
+.imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgb(141, 82, 156);
+    width: 100%;
+    height: 30%;
+    transition: .2s ease;
+    overflow: hidden;
+    border-top-left-radius: 0;
+    border-top-right-radius:0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px;
+}
+.overlay p{
+    font-family: 'roboto-bold';
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+.imagen:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    background: rgba(141, 82, 156, 0.808);
+}
+.galeria{
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+   
+}
+.galeria li{
+    margin: 5px;
+}
+.galeria img{
+    width: 240px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    filter: brightness(90%);
+    border: white 5px double;
+}
+.galeria img:hover{
+    filter: brightness(100%);
+    transform: scale(1.1);
+}
+@media (min-width:480px){
+    .galeria__item{
+        width: 48%;
+    }
+}
+@media (min-width:768px){
+    .galeria__item{
+        width: 33%;
+    }
+}
+@media (min-width:1024px){
+    .galeria__item{
+        width: 20%;
+        margin: 15px;
+    }
+}
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal__img{
+    width: 40%;
+    max-width: 450px;
+}
+.modal__boton{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.modal__back{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50px;
+    top: 300px;
+    cursor: pointer;
+}
+.modal__next{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 50px;
+    top: 300px;
+    cursor: pointer;
+}
+
+/************************************************daniela.html**********************************************************/
+.title-d{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-family: 'roboto-bold';
+}
+.canva-des{
+    display: flex;
+    width: 76%;
+    margin: auto;
+    margin-top: 2%;
+}
+.canva-des img{
+    width: 55%;
+    margin-left: 3%;
+}
+.me p{
+    font-family: 'roboto-bold';
+    text-align: justify;
+}
+.me p span{
+    color: #C701FF;
+}
+.canva-des2{
+    width: 76%;
+    margin: auto;
+    margin-top: 2%;
+}
+.comp{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+}
+.desc{
+    width: 45%;
+    position: relative;
+    height: 500px;
+    margin: 1%;
+    background: url(../img/exp/vista-papel-arrugado-blanco_1194-7544.jpg);
+    background-size: cover;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 0px 0px 10px 0px #5d5c5ec7;
+    padding: 1%;
+}
+.desc img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+#cs{
+    width: 21%;
+}
+#rv{
+    margin-top: 7%;
+}
+.desc p{
+    font-family: 'roboto-bold';
+    position: absolute;
+    top: 24%;
+    padding: 3%;
+}
+.pict{
+    position: absolute;
+    bottom: 4%;
+    width: 95%;
+    display: flex;
+    margin: auto;
+}
+.pict-cont{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    
+    margin: auto;
+}
+#foto1{
+    background: url(../img/exp/lego.jpg);
+    background-size: cover;
+}
+#foto2{
+    background: url(../img/exp/DCP_3136.jpg);
+    background-size: cover;
+}
+#foto3{
+    background: url(../img/exp/vex/IMG_6524.JPG);
+    background-size: cover;
+}
+#foto4{
+    background: url(../img/exp/vex/IMG_92133.JPG);
+    background-size: cover;
+}
+#foto5{
+    background: url(../img/exp/vex/JDKC2343.JPG);
+    background-size: cover;
+}
+#foto6{
+    background: url(../img/exp/vex/40318647_2605823576309991_1895969598642061312_o.jpg);
+    background-size: cover;
+}
+#foto7{
+    background: url(../img/exp//circuitosolar/IMG_5816.JPG);
+    background-size: cover;
+}
+#foto8{
+    background: url(../img/exp/circuitosolar/IMG_8439.jpg);
+    background-size: cover;
+}
+#foto9{
+    background: url(../img/exp/ferias/IMG_4353.JPG);
+    background-size: cover;
+}
+#foto10{
+    background: url(../img/exp/ferias/23023003_879276285562268_1820140566_o.jpg);
+    background-size: cover;
+}
+#foto11{
+    background: url(../img/exp/roborave/11222237_10207732171166012_9192289125008855674_n.jpg);
+    background-size: cover;
+}
+#foto12{
+    background: url(../img/exp/roborave/12274589_10207742059453213_6348260734100746611_n.jpg);
+    background-size: cover;
+}
+
+.animado{
+    opacity: 0;
+    transition: all 1s;
+}
+.skills{
+    display: flex;
+}
+.skills img{
+    width: 4%;
+    height: 4%;
+    margin: auto;
+}
+.subir{
+    text-align: center;
+    font-family: 'roboto-bold';
+    margin-top: 3%;
+    margin-bottom: 3%;    
+}
+#btnup{
+    background: #C701FF;
+    width: 5%;
+    height: 60px;
+    border-radius: 50%;
+    margin: auto;
+    padding-top: 1.5%;
+    box-sizing: border-box;
+}
+#btnup:hover{
+    background: #c801ff98;
+}
+#btnup a{
+    text-decoration: none;
+    color: white;
+}

@@ -4,83 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link rel="stylesheet" href="css/estilos.css">
-    <title>Etérea - Contactame</title>
+    <link rel="stylesheet" href="plugins/particles/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contactame</title>
 </head>
 
 <body>
+    <div id="particles-js" class="particles-js"></div>
     <header>
-        <div class="row">
-            <div class="col-md-4 nav1">
-                <div id="menu">
-                    <img src="img/menuHPNG.png" alt="">
-                </div>
-                <nav id="nav" class="hide">
-                    <a href="index.html">INICIO</a>
-                    <a href="">BLOG</a>
-                    <a href="">PORTAFOLIO</a>
-                    <a href="sobreMi.html">DANIELA</a>
-                    <a href="contactame.html">CONTACTAME</a>
-                </nav>
-                <svg id="back" width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-chevron-left back hide"
-                    fill="white" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                </svg>
-            </div>
-            <div class="col-md-4">
-                <div id="logotipo">
-                    <a href="inicio.html">
-                        <img src="img/etereaPNG.png" alt="Etérea">
-                    </a>
-
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div id="buscador">
-                    <svg width="1.6em" height="1.6em" viewBox="0 0 16 16" class="bi bi-search" fill="black"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
-                        <path fill-rule="evenodd"
-                            d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
-                    </svg>
-                </div>
-            </div>
+        <div class="logo">
+            <img src="img/etereaPNG.png" alt="logo-eterea">
+        </div> 
+        <div id="hamburger">
+            <button>
+                <span class="top-line"></span>
+                <span class="middle-line"></span>
+                <span class="botton-line"></span>
+            </button>
         </div>
-    </header>    
-    <div class="text-center contacto">
-        <h5>¿Quieres que hablemos? escribeme a: </h5>
-        <div class="redesC">
-            <div>
-                <img src="img/gmaillogo.png" alt="gmail">
-            </div>
-            <div>
-                <img src="img/instagram-2433265_1280.png" alt="instagram">
-            </div>
-            <div>
-                <img src="img/facebook-2429746_1280.png" alt="facebook">
-            </div>
-            <div>
-                <img src="img/twitter-2430933_1280.png" alt="twitter">
+        <nav id="nav-cont" class="hide">
+            <a href="index.html">INICIO</a>
+            <a href="daniela.html">DANIELA</a>
+            <a href="portafolio.html">PORTAFOLIO</a>
+            <a href="contactame.html">CONTACTAME</a>
+        </nav>
+    </header>
+    <main>
+        <div id="cuadrado">
+            <div class="cont-msj">
+                <p>Enviame un mensaje</p>
+                <form action="">
+                    <input id="nombre" type="text"  placeholder="Nombre">
+                    <input id="mail" type="email" placeholder="Correo electronico">
+                    <textarea id="msg" placeholder="Mensaje..."></textarea>
+                </form>
             </div>
             
         </div>
-    </div>
+        <div id="circulo_1">
+            <img src="img/iconemail.png" alt="">
+        </div>
+        <div id="circulo_2">
+            <button>Enviar</button>
+        </div>
+    </main>
     
-    <br>
-    <footer class="foot2">
-        <p>Copyright © 2020 Daniela Jurado Blandón</p>
-    </footer>
-
-    <script src="js/js.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="plugins/particles/js/particles.js"></script>
+    <script src="plugins/particles/js/lib/stats.js"></script>
+    <script src="plugins/particles/js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    
 </body>
 
 </html>
