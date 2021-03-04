@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.5/glider.min.css">
     <link rel="stylesheet" href="css/style2.css">
     <title>Portafolio</title>
 </head>
@@ -79,16 +81,55 @@
             </p>
         </section>
         <section class="portafolio galeria_esp">  
-            <ul class="galeria">
-                <li class="galeria__item"><img src="img/galery draws/imagen1.png" alt="" class="galeria__img"></li>
-                <li class="galeria__item"><img src="img/galery draws/imagen2.png" alt="" class="galeria__img"></li>
-                <li class="galeria__item"><img src="img/galery draws/imagen3.png" alt="" class="galeria__img"></li>
-                <li class="galeria__item"><img src="img/galery draws/imagen4.png" alt="" class="galeria__img"></li>
-                <li class="galeria__item"><img src="img/galery draws/imagen5.png" alt="" class="galeria__img"></li>
-                <li class="galeria__item"><img src="img/galery draws/imagen6.png" alt="" class="galeria__img"></li>
-                <li class="galeria__item"><img src="img/galery draws/imagen7.png" alt="" class="galeria__img"></li>
-                <li class="galeria__item"><img src="img/galery draws/imagen8.png" alt="" class="galeria__img"></li>
-            </ul>
+            <div class="carousel">
+                <div class="carousel__contenedor">
+                    <button aria-label="Anterior" class="carousel__anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+        
+                    <div class="carousel__lista">
+                        <div class="carousel__elemento">
+                            <img src="img/galery draws/imagen1.JPG" alt="img1" class="galeria__img">
+                            
+                        </div>
+        
+                        <div class="carousel__elemento">
+                            <img src="img/galery draws/imagen2.JPG" alt="img1" class="galeria__img">
+                            
+                        </div>
+        
+                        <div class="carousel__elemento">
+                            <img src="img/galery draws/imagen3.JPG" alt="img1" class="galeria__img">
+                            
+                        </div>
+        
+                        <div class="carousel__elemento">
+                            <img src="img/galery draws/imagen4.JPG" alt="img1" class="galeria__img">
+                            
+                        </div>
+        
+                        <div class="carousel__elemento">
+                            <img src="img/galery draws/imagen5.JPG" alt="img1" class="galeria__img">
+                            
+                        </div>
+        
+                        <div class="carousel__elemento">
+                            <img src="img/galery draws/imagen6.JPG" alt="img1" class="galeria__img">
+                            
+                        </div>
+        
+                        <div class="carousel__elemento">
+                            <img src="img/galery draws/imagen7.JPG" alt="img1" class="galeria__img">
+                            
+                        </div>
+                    </div>
+                    
+                    <button aria-label="Anterior" class="carousel__siguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div role="tablist" class="carousel__indicadores"></div>
+            </div>
             <div class="modal" id="modal">
                 <img src="" class="modal__img">
                 <div class="modal__boton" id="modal__boton"><img src="img/galery draws/close.png">
@@ -97,7 +138,7 @@
                 </div>
                 <div class="modal__next" id="modal__next"><img src="img/galery draws/next.png"></div>
             </div>
-        </section>    
+        </section>   
 
     </main>
     <footer>
@@ -110,6 +151,10 @@
         
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.5/glider.min.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    
+    <script src="js/carousel.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

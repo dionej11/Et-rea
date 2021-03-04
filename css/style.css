@@ -181,7 +181,7 @@ h1 span{
 #cuadrado{
     width: 700px;
     height: 420px;
-    background: #c801ff8e;
+    background: #c801ffa8;
     position: absolute;
     left: 50%;
     margin-left: -350px;
@@ -219,6 +219,7 @@ h1 span{
 .cont-msj form textarea{
     width: 514px;
     height: 180px;
+    border: none;
     border-radius: 5px;
     outline: none;
     padding: 15px;
@@ -240,6 +241,7 @@ h1 span{
     left: 20%;
     top: 48%;
     border-radius: 50%;
+    animation-name: walk;
 }
 #circulo_1 img{
     width: 75%;
@@ -253,27 +255,16 @@ h1 span{
     background: linear-gradient(0, #C701FF, white);
     box-shadow: -3px 3px 6px rgb(131, 129, 129);
     position: absolute;
-    right: 20%;
-    top: 48%;
+    right: -8%;
+    top: 39%;
     border-radius: 50%;
+    border: none;
     text-align: center;
-}
-#circulo_2 button{
-    margin-top: 35%;
     font-family: 'roboto-bold';
     font-size: 25px;
-    background: transparent;
-    border: none;
     color: white;
     cursor: pointer;
     outline: none;
 }
-#correo_box{
-    width: 70px;
-    height: 55px;
-    background: transparent;
-    border-radius: 8%;
-    border: 2px solid white;
-    margin: auto;
-    margin-top: 24%;
-}
+
+

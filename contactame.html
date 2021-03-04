@@ -34,9 +34,10 @@
             <div class="cont-msj">
                 <p>Enviame un mensaje</p>
                 <form action="">
-                    <input id="nombre" type="text"  placeholder="Nombre">
-                    <input id="mail" type="email" placeholder="Correo electronico">
-                    <textarea id="msg" placeholder="Mensaje..."></textarea>
+                    <input id="nombre" type="text"  placeholder="Nombre" required>
+                    <input id="mail" type="email" placeholder="Correo electronico" required>
+                    <textarea id="msg" placeholder="Mensaje..." required></textarea>
+                    <button id="circulo_2" type="submit">Enviar</button>
                 </form>
             </div>
             
@@ -44,16 +45,13 @@
         <div id="circulo_1">
             <img src="img/iconemail.png" alt="">
         </div>
-        <div id="circulo_2">
-            <button>Enviar</button>
-        </div>
+        
     </main>
-    
+    <script src="js/script.js"></script>
     <script src="plugins/particles/js/particles.js"></script>
     <script src="plugins/particles/js/lib/stats.js"></script>
     <script src="plugins/particles/js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
     
 </body>
 

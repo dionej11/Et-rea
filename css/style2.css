@@ -223,47 +223,6 @@ main section h2 span{
     border-radius: 10px;
     background: rgba(141, 82, 156, 0.808);
 }
-.galeria{
-    width: 100%;
-    margin: auto;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style: none;
-   
-}
-.galeria li{
-    margin: 5px;
-}
-.galeria img{
-    width: 240px;
-    height: 200px;
-    object-fit: cover;
-    cursor: pointer;
-    filter: brightness(90%);
-    border: white 5px double;
-}
-.galeria img:hover{
-    filter: brightness(100%);
-    transform: scale(1.1);
-}
-@media (min-width:480px){
-    .galeria__item{
-        width: 48%;
-    }
-}
-@media (min-width:768px){
-    .galeria__item{
-        width: 33%;
-    }
-}
-@media (min-width:1024px){
-    .galeria__item{
-        width: 20%;
-        margin: 15px;
-    }
-}
 .modal{
     position: fixed;
     width: 100%;
@@ -305,7 +264,41 @@ main section h2 span{
     top: 300px;
     cursor: pointer;
 }
-
+.carousel__contenedor{
+    position: relative;
+}
+.galeria__img{
+    cursor: pointer;
+}
+.carousel__anterior,
+.carousel__siguiente{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: rgb(184, 181, 181);
+    border-radius: 50%;
+    color: #fff;
+    outline: none;
+}
+.carousel__siguiente{
+    right: 0px;
+}
+.carousel__anterior{
+    left: 0px;
+    z-index: 3;
+}
+.carousel__anterior:hover {
+    background: rgb(122, 121, 121);
+}
+.carousel__siguiente:hover {
+    background: rgb(122, 121, 121);
+}
 /************************************************daniela.html**********************************************************/
 .title-d{
     margin-top: 1%;
