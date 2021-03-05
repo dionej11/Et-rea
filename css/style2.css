@@ -146,24 +146,7 @@ nav a:hover{
         transform: translateY(0px) rotate(0deg);
     }
 }
-footer{
-    width: 100%;
-    height: 100px;
-    background: url(../img/header.PNG);
-    text-align: center;
-    font-family: 'roboto-bold';
-}
-.foot{
-    display: flex;
-    width: 200px;
-    margin: auto;
-}
-.foot img{
-    width: 40%;
-}
-.git img{
-    width: 103%;
-}
+
 /*****************************************************portafolio******************************************************/
 .portafolio{
     margin-left: 12%;
@@ -299,6 +282,7 @@ main section h2 span{
 .carousel__siguiente:hover {
     background: rgb(122, 121, 121);
 }
+
 /************************************************daniela.html**********************************************************/
 .title-d{
     margin-top: 1%;
@@ -331,132 +315,55 @@ main section h2 span{
     display: flex;
     width: 100%;
     margin: auto;
-    /* justify-content: space-around; */
     flex-wrap: wrap;
 }
-.desc{
-    width: 45%;
-    position: relative;
-    height: 500px;
-    margin: 1%;
-    background: url(../img/exp/vista-papel-arrugado-blanco_1194-7544.jpg);
-    background-size: cover;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    box-shadow: 0px 0px 10px 0px #5d5c5ec7;
-    padding: 1%;
-}
-.desc img{
-    width: 50%;
-    display: block;
-    margin: auto;
-}
 #cs{
-    width: 21%;
+    width: 40%;
 }
-#rv{
-    margin-top: 7%;
-}
-.desc p{
-    font-family: 'roboto-bold';
-    position: absolute;
-    top: 24%;
-    padding: 3%;
-}
-.pict{
-    position: absolute;
-    bottom: 4%;
-    width: 95%;
-    display: flex;
-    margin: auto;
-}
-.pict-cont{
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    
-    margin: auto;
-}
-#foto1{
-    background: url(../img/exp/lego.jpg);
-    background-size: cover;
-}
-#foto2{
-    background: url(../img/exp/DCP_3136.jpg);
-    background-size: cover;
-}
-#foto3{
-    background: url(../img/exp/vex/IMG_6524.JPG);
-    background-size: cover;
-}
-#foto4{
-    background: url(../img/exp/vex/IMG_92133.JPG);
-    background-size: cover;
-}
-#foto5{
-    background: url(../img/exp/vex/JDKC2343.JPG);
-    background-size: cover;
-}
-#foto6{
-    background: url(../img/exp/vex/40318647_2605823576309991_1895969598642061312_o.jpg);
-    background-size: cover;
-}
-#foto7{
-    background: url(../img/exp//circuitosolar/IMG_5816.JPG);
-    background-size: cover;
-}
-#foto8{
-    background: url(../img/exp/circuitosolar/IMG_8439.jpg);
-    background-size: cover;
-}
-#foto9{
-    background: url(../img/exp/ferias/IMG_4353.JPG);
-    background-size: cover;
-}
-#foto10{
-    background: url(../img/exp/ferias/23023003_879276285562268_1820140566_o.jpg);
-    background-size: cover;
-}
-#foto11{
-    background: url(../img/exp/roborave/11222237_10207732171166012_9192289125008855674_n.jpg);
-    background-size: cover;
-}
-#foto12{
-    background: url(../img/exp/roborave/12274589_10207742059453213_6348260734100746611_n.jpg);
-    background-size: cover;
-}
-
 .animado{
     opacity: 0;
     transition: all 1s;
 }
-.skills{
+.aboutme{
     display: flex;
 }
-.skills img{
-    width: 4%;
-    height: 4%;
-    margin: auto;
+.cont__exp, .cont__skills{
+    width: 50%;
+    margin: 5px;
 }
-.subir{
-    text-align: center;
+.logos{
+    justify-content: left;
+    display: grid;
+    grid-template-columns: 130px 130px 130px;
+}
+.logos img{
+    object-fit: contain;
+    margin: auto;
+    width: 100%;
+}
+.logos__skills{
+    justify-content: left;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+}
+.logos__skills img{
+    object-fit: contain;
+    margin: auto;
+    width: 80%;
+}
+
+footer{
+    width: 100%;
+    height: 140px;
+    background: url(../img/footer.PNG);
+    margin-top: 20px;
     font-family: 'roboto-bold';
-    margin-top: 3%;
-    margin-bottom: 3%;    
+    text-align: center;
+    padding-top: 2%;
 }
-#btnup{
-    background: #C701FF;
-    width: 5%;
-    height: 60px;
-    border-radius: 50%;
-    margin: auto;
-    padding-top: 1.5%;
-    box-sizing: border-box;
-}
-#btnup:hover{
-    background: #c801ff98;
-}
-#btnup a{
+footer a{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
+    margin: 2px;
+    font-size: 1.5em;
 }
